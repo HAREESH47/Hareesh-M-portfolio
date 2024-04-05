@@ -15,7 +15,7 @@
 } 
 
 body{
-    font-family:'Nunito Sans', sans-serif ;
+    font-family:var(--nunito) ;
 }
 
 /* header */
@@ -287,3 +287,53 @@ ul.social-icons{
 
 }
 
+/* contact-section*/
+
+.contact-section{
+    background-color:#14171c;
+    padding: 40px;
+    color:#fff ;
+    text-align: center;
+   
+}
+
+.contact-section h4{
+    font-size: 25px;
+    margin:20px ;
+    font-weight: 900;
+    font-size: 30px;
+}
+
+.contact-section h4> span{
+    color: var(--primary);
+}
+
+.contact-section form input, textarea{
+    padding:5px 10px;
+    color: #fff;
+    outline:none;
+    width: 350px;
+    border: none;
+    border-radius:2px;
+    background-color:#22282f;
+    margin-bottom: 10px;
+    resize: none;
+    font-family: var(--nunito);
+}
+
+/*footer*/
+
+footer{
+    background-color:var(--dark-primary);
+    color:gray;
+    padding: 10px;
+    text-align: center;
+    font-size: 12px;
+
+}
+
+footer a{
+    text-decoration: none;
+    color:var(--primary) ;
+
+}
