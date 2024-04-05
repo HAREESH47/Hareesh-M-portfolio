@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+
+:root {
+    --primary: #12bdff;
+    --primary-hover: #0c8ec2;
+    --dark-primary: #1b1f24;
+    --nunito: 'Nunito Sans', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+body{
+    font-family:'Nunito Sans', sans-serif ;
+}
+
+/* header */
+
+header {
+    background-color: var(--dark-primary);
+    padding: 20px ;
+    color: #fff ;
+
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+} 
+
+header .logo{
+    color: var(--primary);
+    font-weight:bold;
+    letter-spacing: 2px;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+}
+
+header ul li{
+    margin-right: 20px;
+}
+
+header ul li a{
+     color: #fff;
+     text-decoration:none;
+}
+
+header ul li a:hover{
+    color: var(--primary);
+}
+
+
+/* Section: Hero Homepage */
+
+section.hero-section{
+    background-color: var(--dark-primary);
+    color:#fff;
+
+    display: flex;
+    align-items: center;
+    padding: 20px 120px 0 240px;
+
+}
+
+.hero-section__title{
+    font-size: 48px;
+    font-weight: 900px;
+    
+}
+
+.hero-section__desc{
+    color:#c4c4c4 ;
+}
+
+.social-icons{
+     margin: 20px 0;
+}
+
+.social-icons li{
+    margin-right: 15px;
+}
+
+ul.social-icons{
+    list-style: none;
+    display: flex;
+}
+
+.social-icons li  > a{
+     text-decoration: none;
+     color: #fff;
+}
+
+.social-icons li a > i.fa-facebook:hover{
+    color: #1877f2;
+}
+
+.social-icons li a > i.fa-instagram:hover{
+    color:#feda75;
+}
+
+.social-icons li a > i.fa-linkedin:hover{
+    color:#0072b1 ;
+}
+
+.social-icons li a > i.fa-twitter:hover{
+    color: #00acee;
+}
+
+/* buttons */
+
+.hero-buttons button{
+    margin-right: 10px;
+}
+
+.btn{
+    padding : 10px 20px;
+    border-radius: 2px;
+    border :none;
+    cursor: pointer;
+}
+
+.btn.btn-primary{
+    background-color:var(--primary) ;
+    font-weight: 600;
+    color: var(--dark-primary);
+    border-radius: 5px; ;
+}
+
+.btn.btn-primary:hover{
+    background-color: #fff;
+    color: var(--dark-primary);
+}
+
+.btn-dark-outlined{
+    background-color:var(--dark-primary);
+    border : 1px solid var(--primary);
+    color: var(--primary);
+    border-radius: 5px;
+    font-weight :600px; 
+    
+}
+
+.btn-dark-outlined:hover{
+   cursor: pointer;
+   background-color: var(--primary);
+   color: white;
+}
+
+
+/* About-me section */
+
+.about-section{
+    background-color:#22282f;
+    color: #fff;
+    padding : 60px;
+
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    
+}
+
+.about-section img{
+    width :250px;
+    border-radius:10px;
+    border: 3px solid var(--primary);
+    box-shadow: 3px 5px 40px #03506e;
+}
+
+.about-section--desc{
+    margin-left: 100px;
+    max-width: 450px;
+}
+
+.about-section--desc h4{
+      font-size: 30px;
+     font-weight:900;
+}
+
+.about-section--desc h4> span{
+    color: var(--primary);
+}
+
+.about-section--desc ul{
+    list-style: none;
+    margin: 10px 0;
+   
+}
+
+.about-section--desc li{
+    margin-bottom: 8px;
+    color:gray ;
+}
+
+.about-section--desc li> a{
+    text-decoration: none;
+    color: gray;
+    
+}
+
+.about-section--desc li> a:hover{
+    color: var(--primary-hover);
+}
+
+.about-section--desc li > strong{
+    color: #fff;
+}
