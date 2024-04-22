@@ -38,10 +38,12 @@ header {
 
 } 
 
-header .logo{
+header .logo {
     color: var(--primary);
     font-weight:bold;
     letter-spacing: 2px;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 header ul {
@@ -68,7 +70,7 @@ header ul li a:hover{
 section.hero-section{
     background-color: var(--dark-primary);
     color:#fff;
-
+    height: 700px;
     display: flex;
     align-items: center;
     padding: 20px 120px 0 240px;
@@ -81,8 +83,21 @@ section.hero-section{
     
 }
 
+.hero-section__title span{
+    color: var(--primary);
+}
+
 .hero-section__desc{
     color:#c4c4c4 ;
+}
+
+.profile-img img{
+    background:rgb(184, 179, 179);
+    margin: 75px;
+    width :325px;
+    height: 325px;
+    border-radius:100%;
+    border: 3px ;
 }
 
 .social-icons{
@@ -103,20 +118,12 @@ ul.social-icons{
      color: #fff;
 }
 
-.social-icons li a > i.fa-facebook:hover{
-    color: #1877f2;
-}
-
-.social-icons li a > i.fa-instagram:hover{
-    color:#feda75;
-}
-
 .social-icons li a > i.fa-linkedin:hover{
     color:#0072b1 ;
 }
 
-.social-icons li a > i.fa-twitter:hover{
-    color: #00acee;
+.social-icons li a > i.fa-github:hover{
+    color:#0072b1 ;
 }
 
 /* buttons */
@@ -137,6 +144,8 @@ ul.social-icons{
     font-weight: 600;
     color: var(--dark-primary);
     border-radius: 5px; ;
+    margin-top: 20px;
+    text-decoration: none;
 }
 
 .btn.btn-primary:hover{
@@ -165,8 +174,8 @@ ul.social-icons{
 .about-section{
     background-color:#22282f;
     color: #fff;
-    padding : 60px;
-
+    padding:20px;
+    height: 650px;
     display: flex;
     justify-content: center;
     align-items:center;
@@ -223,9 +232,11 @@ ul.social-icons{
 
 .work-section{
     background-color: var(--dark-primary);
+    height: 650px;
     color: #fff;
     padding:60px;
     text-align: center;
+    padding-top: 150px;
 }
 
 .work-section__title{
@@ -256,6 +267,10 @@ ul.social-icons{
     
 }
 
+.work-section-box a:hover{
+    color: var(--primary-hover);
+}
+
 .work-section-box p{
     color: gray;
     font-size: 14px;
@@ -265,6 +280,7 @@ ul.social-icons{
     text-decoration: none;
     color: #feda75;
     margin-top: 5px;
+
 }
 
 .work-section-box:hover{
@@ -297,6 +313,7 @@ ul.social-icons{
 
 .contact-section{
     background-color:#14171c;
+    height: 500px;
     padding: 40px;
     color:#fff ;
     text-align: center;
@@ -405,5 +422,6 @@ footer a{
      width: 100%;
  }
  
+ /*Profile image*/
 
   }
